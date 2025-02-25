@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.header{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 28px;
+    color: rgb(17, 17, 17);
+    font-weight: 700;
+}
+.navbar{
+    display: flex;
+}
+.nav-link{
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.home{
+    color: rgb(254, 163, 1);
+    font-weight: 700;
+}
+.about{
+    color: rgb(1, 172, 253);
+}
+.facilities{
+    color: rgb(5, 212, 223);
+}
+.admission{
+    color: rgb(93, 88, 239);
+}
+.btn{
+    background-color: orange;
+    font-weight: 800;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: none;
+}
+
+/* Hero section */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.hero .hero-intro, .hero > img{
+    max-width: 45%;
+}
+.hero h1{
+    font-size: 50px;
+}
+.hero p{
+    margin: 20px 0px;
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 400;
+}
+.text-orange{
+    color: rgb(254, 163, 1);;
+    font-weight: 700;
+}
+.text-blue{
+    color: rgb(1, 172, 253);
+}
+.enroll-btn{
+    color: white;
+    background-color: rgba(0, 0, 0);
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Small Device and Responsiveness */
+.small-device-nav{
+    padding-bottom: 30px;
+    display: none;
+}
+.fa-bars{
+    font-size: 30px;
+}
+@media screen and (max-width:576px) {
+    .nav{
+        display: none;
+    }
+    .small-device-nav{
+        display: flex;
+        padding: 0px 15px 15px;
+    }
+    .header{
+        max-width: 100%;
+        padding: 20px 0px;
+    }
+    .header .nav-line{
+        height: 0.5px;
+        background-color: orange;
+    }
+    .brand > h1{
+        display: none;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+        padding: 20px;
+    }
+    .hero h1{
+        font-size: 32px;
+    }
+    .hero p{
+        font-size: 14px;
+    }
+    .enroll-btn{
+        font-size: 16px;
+    }
+    .hero .hero-intro, .hero img{
+        max-width: 100%;
+    }
+}
+
+/* Medium Screen */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+        padding: 20px;
+    }
+    .hero .hero-intro, .hero img{
+        max-width: 100%;
+    }
+    .nav{
+        display: none;
+    }
+    .small-device-nav{
+        display: flex;
+    }
+}
+
+/* Main */
+main{
+    background: url("../assets/bg.png");
+}
+
+/* Curriculum sec */
+.curriculum-sec{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.curriculum-sec > h1{
+    text-align: center;
+    margin: 80px;
+}
+.curriculum-cards-container{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+.curriculum-card{
+    border: 2px solid;
+    padding: 40px;
+    text-align: center;
+    border-radius: 16px;
+    border: 0.94px solid rgb(222, 245, 255);
+    box-shadow: inset 0px 0px 28px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 30%), rgb(255, 255, 255);
+}
+.elementary-card{
+    border: 0.94px solid rgb(255, 244, 220);
+    box-shadow: inset 0px 0px 28px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.middle-card{
+    border: 0.94px solid rgb(242, 232, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.curriculum-card img, .curriculum-card h3, .curriculum-card p{
+    margin-bottom: 20px;
+}
+.curriculum-card h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(32, 32, 32);
+}
+.curriculum-card p{
+    color: rgb(128, 128, 128);
+    font-size: 15px;
+    font-weight: 500;
+}
+.text-skyblue{
+    color: rgb(100, 200, 255);
+    font-size: 15px;
+    font-weight: 700;
+}
+.text-purple{
+    color: rgb(135, 0, 255);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.next-more-edu{
+    margin: 70px 0px;
+    text-align: center;
+}
+.next-more-edu i{
+    color: white;
+    background-color: orange;
+    padding: 28px;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+.next-more-edu i:hover{
+    animation-name: next-more-edu-ani;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes next-more-edu-ani{
+    0%{
+        
+    }
+    25%{
+        background-color: black;
+    }
+    50%{
+        background-color: coral;
+    }
+    100%{
+        background-color: skyblue;
+    }
+
+}
+/* Responsiveness -Small screen */
+@media screen and (max-width:576px) {
+    .curriculum-cards-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .curriculum-sec{
+        max-width: 90%;
+    }
+    .curriculum-card h3{
+        font-size: 24px;
+    }
+    .curriculum-card p{
+        font-size: 14px;
+    }
+    .next-more-edu{
+        display: none;
+    }
+}
+        /* Medium screen */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .curriculum-cards-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .next-more-edu{
+        display: none;
+    }
+}
+
+        /* Our Stories */
+.our-stories-main-sec{
+    background: linear-gradient(0.00deg,
+    rgba(254, 163, 1, 0.3),
+   rgba(255, 255, 255, 0.3) 100%);
+}
+.our-stories-sec{
+    max-width: 80%;
+    margin: 0 auto;
+  
+}
+.our-stories-sec > h1{
+    text-align: center;
+    margin: 80px 0px 60px;
+    font-size: 45px;
+    font-weight: 700;
+}
+.our-stories-cards-container{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+.story-1{
+    border-radius: 16px;
+    background-color: white;
+}
+.story-1 img{
+    border-radius: 16px 16px 0px 0px;
+    width: 100%;
+}
+
+.story-intro h3{
+    margin: 0px 0px 15px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.story-1 h3{
+    font-size: 24px;
+}
+.story-1 p{
+    color: rgb(102, 102, 102);
+    font-size: 15px;
+    font-weight: 500;
+}
+.story-intro{
+    padding: 24px;
+}
+.story-intro time{
+    font-size: 10px 15px;
+    font-weight: 500;
+    color: white;
+    background: rgb(60, 216, 232);
+    border-radius: 45px;
+    padding: 15px;
+}
+.multi-stories-cards-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.multi-story-card{  
+    border-radius: 16px;
+    background-color: white;
+
+}
+.multi-story-card img{
+    border-radius: 16px 16px 0px 0px;
+}
+.story-intro-date{
+    position: relative;
+    top: -45px;
+    text-align: center;
+}
+.story-2-badge time, .story-4-badge time, .story-5-badge time{
+    background-color: rgb(149, 178, 38);
+}
+.story-3-badge time{
+    background-color: rgb(93, 88, 240);
+}
+.btn-view-div{
+    text-align: center;
+    padding: 80px 0px 60px;
+}
+.btn-view-all{
+    background-color: black;
+    padding: 15px 50px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+/* Hidden cards */
+#story-4, #story-5{
+    display: none;
+}
+
+/* moving-text */
+.moving-text{
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+/* Responsiveness */
+@media screen and (max-width:576px) {
+    .our-stories-cards-container{
+        display: block;
+    }
+    .story-1{
+        display: none;
+    }
+    .our-stories-sec{
+        max-width: 90%;
+    }
+    .multi-stories-cards-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .multi-story-card img{
+        width: 100%;
+    }
+    .story-intro{
+        padding: 8px;
+    }
+    .story-intro-date{
+        top: -30px;
+        text-wrap: nowrap;
+    }
+    .story-intro-date time{
+        padding: 8px;
+        font-size: 14px;
+    }
+    #story-4, #story-5{
+        display: block;
+    }
+    .btn-view-all{
+        padding: 12px 34px;
+        font-size: 15px;
+    }
+}
+
+        /* Medium Screen */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .our-stories-cards-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .multi-story-card img{
+        width: 100%;
+    }
+}
+
+
+/* Footer */
+footer{
+    padding: 100px 0px;
+    background: rgb(1, 172, 253);
+}
+.foo-container{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: white;
+}
+.kids-education{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+}
+.kids-education img{
+    width: 70px;
+    height: 81px;
+}
+.kids-education > h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+.foo-card{
+    max-width: 400px;
+}
+.foo-card > h1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.foo-card > a{
+    display: block;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* .social-media{
+    display: flex;
+    gap: 8px;
+    font-size: 28px;
+    margin-top: 16px;
+}
+.fa-github{
+    color: black;
+} */
+
+/* Responsiveness */
+@media screen and (max-width:576px){
+    
+    .foo-container{
+        max-width: 90%;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    .foo-container{
+        max-width: 90%;
+    }
+}
